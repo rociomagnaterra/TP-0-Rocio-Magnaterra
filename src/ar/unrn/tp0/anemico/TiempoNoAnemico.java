@@ -16,9 +16,9 @@ public class TiempoNoAnemico {
         this.tiempo = LocalDateTime.now();
     }
     public String fechaLarga() {
-        return this.tiempo.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)); //formato FULL
+        return this.tiempo.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)); //format de fecha larga (FULL
     }
     public String fechaCorta() {
-        return this.tiempo.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")); //formato corto
+        return this.tiempo.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")); //formato de fecha corta.
     }
 }
